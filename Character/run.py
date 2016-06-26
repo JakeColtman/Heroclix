@@ -3,6 +3,8 @@ from flask import Flask, jsonify, request
 from Character import CharacterInfo, Stats
 import json
 from Repository import CharacterRepository
+import os
+import requests
 
 app = Flask(__name__)
 
@@ -25,11 +27,7 @@ def get_character_details(character_id):
 def create_character():
     details = request.get_json(silent = True)
     try:
-        json_stats = details["dials"][0]
-        damage, attack, movement, defence = [json_stats[x] for x in ["damage", "attack", "movement", "defence"]]
-        stats = Stats(movement, attack, defence, damage)
-        character = CharacterInfo(details["name"], [], [stats])
-        repo.add_character(character)
+        repo.add_character_from_json(request.get_json())
         response = jsonify({"Status": "Success"})
     except:
         response = jsonify({"Status": "Failure"})
@@ -37,8 +35,12 @@ def create_character():
     return response
 
 if __name__ == '__main__':
-    stat = Stats(1, 2, 3, 4)
-    info = CharacterInfo("Jake", ["UNSC"], [stat])
+
     repo = CharacterRepository()
-    repo.add_character(info)
+
+    if repo.characters == []:
+        for filey in os.listdir("Info"):
+            with open(os.path.join("Info", filey)) as char_file:
+                repo.add_character_from_json(json.load(char_file))
+
     app.run(debug=True)

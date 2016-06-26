@@ -1,3 +1,4 @@
+from Character import Stats, CharacterInfo
 
 class CharacterRepository:
 
@@ -10,4 +11,15 @@ class CharacterRepository:
 
     def get_character_by_id(self, id):
         return self.characters[id - 1]
+
+    def add_character_from_json(self, details):
+
+        def parse_stats(json_stat):
+            damage, attack, movement, defence = [json_stat[x] for x in ["damage", "attack", "movement", "defence"]]
+            return Stats(movement, attack, defence, damage)
+
+        json_stats = details["dials"]
+        dials = map(parse_stats, json_stats)
+        character = CharacterInfo(details["name"], [], dials)
+        self.add_character(character)
 
