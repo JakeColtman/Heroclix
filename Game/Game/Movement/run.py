@@ -10,7 +10,7 @@ def index(unit_id):
     pos = state.get_engine().map.get_unit_position(unit_id)
     return jsonify({"unit_id": unit_id, "position": pos})
 
-@map_api.route('/game/map/add/x/<int:x>/y/<int:y>')
+@map_api.route('/game/map/add', methods = ["POST"])
 def add_unit(x, y):
     state.get_engine().map.add_unit(1, [x,y])
     return jsonify({"Status": "Sucess"})

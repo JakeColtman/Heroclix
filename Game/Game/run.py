@@ -1,6 +1,7 @@
 #!flask/bin/python
 from flask import Flask, jsonify, request
 from Movement.run import map_api
+from Character.run import character_api
 from flask import Flask
 from Repository import GameRepository
 from Game import state
@@ -11,6 +12,7 @@ game_repo = GameRepository()
 app = Flask(__name__)
 
 app.register_blueprint(map_api)
+app.register_blueprint(character_api)
 
 @app.route("/game/load/<int:game_id>", methods=['GET'])
 def load_game(game_id):

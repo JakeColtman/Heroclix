@@ -1,4 +1,4 @@
-from Character import Stats, CharacterInfo
+from .Character import Stats, CharacterInfo
 import json
 
 class CharacterRepository:
@@ -23,6 +23,6 @@ class CharacterRepository:
         dials = map(parse_stats, json_stats)
         character = CharacterInfo(details["name"], [], dials)
         self.add_character(character)
-        with open("Info/{0}.json".format(character.name.replace(" ", "_").lower()), "w") as new_char_file:
+        with open("Character/Info/{0}.json".format(character.name.replace(" ", "_").lower()), "w") as new_char_file:
             json.dump(details, new_char_file)
 
