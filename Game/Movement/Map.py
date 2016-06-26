@@ -44,3 +44,6 @@ class Map:
             return False
         self.unit_position[id] = pos
         return True
+
+    def to_json(self):
+        return {"size": self.size, "unit_positions": self.unit_position}
