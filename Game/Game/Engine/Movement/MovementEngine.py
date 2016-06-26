@@ -22,6 +22,9 @@ class MovementEngine:
         if not self.is_valid_move(movement):
             print("not a valid move")
             return False
+        if not movement.unit.can_act():
+            print("unit not active")
+            return False
         success = [x.move(movement) for x in self.maps]
         movement.unit.position = movement.ending_position
         return success

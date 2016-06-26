@@ -10,5 +10,5 @@ class Player:
     def active_units(self):
         return list(filter(lambda x: x.can_act(0), self.units))
 
-    def does_own_unit(self, unit):
+    def owns_unit(self, unit):
         return unit in self.units

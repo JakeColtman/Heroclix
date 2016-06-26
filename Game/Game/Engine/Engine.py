@@ -17,6 +17,11 @@ class Engine:
         self.victory_state = "Not Started"
 
     def movement(self, movement):
+
+        if not self.current_player().owns_unit(movement.unit):
+            print("Current player doesn't own unit")
+            return False
+
         if self.movement_engine.try_move(movement):
             movement.unit.actions_remaining -= 1
         else:
@@ -30,6 +35,7 @@ class Engine:
         return self.players[self.current_turn_index]
 
     def end_turn(self):
+        print("ending turn")
         if self.current_turn_index < len(self.players) - 1:
             self.current_turn_index += 1
         else:

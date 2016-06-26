@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d148038-5042-47ff-b3f9-e5232df59ee5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game/Game/EndPoints/engine_api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game/Game/Engine/Movement/Movement.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game/Game/Engine/Player/Player.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game/Game/Engine/Units/Unit.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game/Game/play.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Character/Character.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Character/Info/black_widow.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Character/Info/master_chief.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Character/Repository.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Character/run.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Movement/Map.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/Movement/run.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Game/Game/run.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Game/Game/Character/__init__.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/Map/Repository.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Game/Game/Engine.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/Engine.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Game/Game/GameState.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/GameState.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Game/Game/Movement/__init__.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/API.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Game/Game/Repository.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/GameRepository.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Game/Game/Team.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/Team.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Heroclix.iml" afterPath="$PROJECT_DIR$/.idea/Heroclix.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game/Game/__init__.py" afterPath="$PROJECT_DIR$/Game/Game/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game/Game/Engine/Character/Info/black_widow.json" afterPath="$PROJECT_DIR$/Game/Game/Engine/Character/Info/black_widow.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game/Game/Engine/Character/Info/master_chief.json" afterPath="$PROJECT_DIR$/Game/Game/Engine/Character/Info/master_chief.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game/Game/Engine/Engine.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/Engine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game/Game/Engine/Player/Player.py" afterPath="$PROJECT_DIR$/Game/Game/Engine/Player/Player.py" />
     </list>
     <ignored path="Heroclix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Engine.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Engine.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Engine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.68351066">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -57,24 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="play.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/Game/play.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8590425">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movement.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Movement/Movement.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -123,10 +95,8 @@
         <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Units/Unit.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding>
-                <marker date="1466970916287" expanded="true" signature="64:269" placeholder="..." />
-              </folding>
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,14 +115,8 @@
         <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Player/Player.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding>
-                <marker date="1466970237089" expanded="true" signature="14:316" placeholder="..." />
-                <marker date="1466970237089" expanded="true" signature="46:73" placeholder="..." />
-                <marker date="1466970237089" expanded="true" signature="99:153" placeholder="..." />
-                <marker date="1466970237089" expanded="true" signature="182:246" placeholder="..." />
-                <marker date="1466970237089" expanded="true" signature="282:316" placeholder="..." />
-              </folding>
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -212,17 +176,17 @@
         <option value="$PROJECT_DIR$/Game/Game/Engine/Map/Repository.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Units/Units.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/API.py" />
-        <option value="$PROJECT_DIR$/Game/Game/Engine/Player/Player.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Character/Repository.py" />
         <option value="$PROJECT_DIR$/Game/Game/__init__.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Units/Unit.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Movement/Movement.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Map/Map.py" />
-        <option value="$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py" />
-        <option value="$PROJECT_DIR$/Game/Game/Engine/Engine.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Units/UnitFactory.py" />
         <option value="$PROJECT_DIR$/Game/Game/Engine/Units/UnitMap.py" />
         <option value="$PROJECT_DIR$/Game/Game/play.py" />
+        <option value="$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py" />
+        <option value="$PROJECT_DIR$/Game/Game/Engine/Player/Player.py" />
+        <option value="$PROJECT_DIR$/Game/Game/Engine/Engine.py" />
       </list>
     </option>
   </component>
@@ -701,7 +665,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30940172" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30940172" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.20049505" order="0" side_tool="true" content_ui="tabs" />
@@ -907,16 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Units/Unit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <marker date="1466970916287" expanded="true" signature="64:269" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Map/Map.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -933,50 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Player/Player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <marker date="1466970237089" expanded="true" signature="14:316" placeholder="..." />
-            <marker date="1466970237089" expanded="true" signature="46:73" placeholder="..." />
-            <marker date="1466970237089" expanded="true" signature="99:153" placeholder="..." />
-            <marker date="1466970237089" expanded="true" signature="182:246" placeholder="..." />
-            <marker date="1466970237089" expanded="true" signature="282:316" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Units/UnitFactory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Movement/Movement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -991,10 +905,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Game/Game/play.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8590425">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Units/Unit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Movement/Movement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Movement/MovementEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Player/Player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Game/Engine/Engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68351066">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
