@@ -7,6 +7,7 @@ class Map:
 
     def __init__(self, size = 5):
         self.map = []
+        self.size = size
         for i in range(size):
             self.map.append([])
             for j in range(size):
@@ -19,6 +20,15 @@ class Map:
 
     def get_unit_position(self, id):
         return self.unit_position[id]
+
+    def get_moveable_positions(self, id):
+        valid_squares = []
+        occupied_squares = [self.unit_position[x] for x in self.unit_position]
+        for i in range(self.size):
+            for j in range(self.size):
+                if [i,j] not in occupied_squares:
+                    valid_squares.append([i,j])
+        return valid_squares
 
     def can_move(self, id, pos):
 
