@@ -1,4 +1,4 @@
-from Game import Game
+from Engine import Engine
 
 class GameRepository:
 
@@ -13,5 +13,5 @@ class GameRepository:
         return self.games[id]
 
     def create_game_from_json(self, json_game):
-        game = Game(json_game["name"], json_game["size"])
+        game = Engine(json_game["name"], json_game["size"])
         return self.create_game(game)

@@ -1,6 +1,6 @@
 from Movement.Map import Map
 
-class Game:
+class Engine:
 
     def __init__(self, name, map_size, teams = None):
         self.map = Map(map_size)
