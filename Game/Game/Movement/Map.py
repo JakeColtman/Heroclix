@@ -1,3 +1,5 @@
+from Game import character_repo
+
 class Square:
 
     def __init__(self, x, y):
@@ -22,12 +24,18 @@ class Map:
         return self.unit_position[id]
 
     def get_moveable_positions(self, id):
+        print(character_repo.get_character_by_id(id))
+        movement_range = character_repo.get_character_by_id(id).stats[0].movement
+        current_x, current_y = self.get_unit_position(id)
         valid_squares = []
         occupied_squares = [self.unit_position[x] for x in self.unit_position]
         for i in range(self.size):
             for j in range(self.size):
-                if [i,j] not in occupied_squares:
-                    valid_squares.append([i,j])
+                if [i,j] in occupied_squares:
+                    continue
+                if abs(i - current_x) > movement_range or abs(j - current_y) > movement_range:
+                    continue
+                valid_squares.append([i,j])
         return valid_squares
 
     def can_move(self, id, pos):

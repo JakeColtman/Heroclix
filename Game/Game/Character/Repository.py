@@ -20,7 +20,7 @@ class CharacterRepository:
             return Stats(movement, attack, defence, damage)
 
         json_stats = details["dials"]
-        dials = map(parse_stats, json_stats)
+        dials = list(map(parse_stats, json_stats))
         character = CharacterInfo(details["name"], [], dials)
         self.add_character(character)
         with open("Character/Info/{0}.json".format(character.name.replace(" ", "_").lower()), "w") as new_char_file:

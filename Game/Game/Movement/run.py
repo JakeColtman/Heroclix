@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import jsonify
+from flask import jsonify, request
 from Game import state
 from flask import Blueprint
 
@@ -9,11 +9,6 @@ map_api = Blueprint('map', __name__)
 def index(unit_id):
     pos = state.get_engine().map.get_unit_position(unit_id)
     return jsonify({"unit_id": unit_id, "position": pos})
-
-@map_api.route('/game/map/add', methods = ["POST"])
-def add_unit(x, y):
-    state.get_engine().map.add_unit(1, [x,y])
-    return jsonify({"Status": "Sucess"})
 
 @map_api.route('/game/map/move/<int:unit_id>/x/<int:x>/y/<int:y>')
 def move_unit(unit_id, x, y):

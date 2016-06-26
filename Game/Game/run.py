@@ -29,5 +29,16 @@ def create_game():
     response = jsonify({"Status": "Success", "game_id": new_id})
     return response
 
+@app.route('/game/add_unit', methods = ["POST"])
+def add_unit():
+    details = request.get_json()
+    character_id, x, y = details["character_id"], details["x"], details["y"]
+    state.get_engine().map.add_unit(character_id, [x,y])
+    return jsonify({"Status": "Sucess"})
+
+@app.route('/game/end_turn', methods = ["POST"])
+def end_turn():
+    return jsonify({"current_turn_index": state.get_engine().end_turn()})
+
 if __name__ == "__main__":
     app.run(debug=True)
