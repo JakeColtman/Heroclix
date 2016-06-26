@@ -5,19 +5,19 @@ from Map import Map
 app = Flask(__name__)
 
 
-@app.route('/map/position/<int:unit_id>')
+@app.route('/game/map/position/<int:unit_id>')
 def index(unit_id):
     pos = map.get_unit_position(unit_id)
     return jsonify({"unit_id": unit_id, "position": pos})
 
 
-@app.route('/map/move/<int:unit_id>/x/<int:x>/y/<int:y>')
+@app.route('/game/map/move/<int:unit_id>/x/<int:x>/y/<int:y>')
 def move_unit(unit_id, x, y):
     map.move(unit_id, [x, y])
     return jsonify({"unit_id": unit_id, "position": [x,y]})
 
 
-@app.route('/map/valid_moves/<int:unit_id>')
+@app.route('/game/map/valid_moves/<int:unit_id>')
 def valid_moves(unit_id):
     moves = map.get_moveable_positions(unit_id)
     resp = {"unit_id": unit_id, "valid_moves": []}
