@@ -16,11 +16,12 @@ app.register_blueprint(map_api)
 def load_game(game_id):
     engine = game_repo.load_game(game_id)
     state.set_engine(engine)
-    return jsonify({"game_id": engine.to_json()})
+    return jsonify({"Status": "Success", "game_id": game_id})
 
 @app.route("/game/create", methods=['POST'])
 def create_game():
     details = request.get_json(silent = True)
+    print(details)
     new_id = game_repo.create_game_from_json(details)
     load_game(new_id)
     response = jsonify({"Status": "Success", "game_id": new_id})
